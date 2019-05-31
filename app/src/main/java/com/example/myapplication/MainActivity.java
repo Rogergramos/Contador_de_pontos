@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (totalPontoA >= 0 && totalPontoA <= 10) {
-                    totalPontoA =+ totalSoma3;
+                    totalPontoA = totalPontoA + totalSoma3;
 
                     pontoA.setText(""+ totalPontoA);
                 }
