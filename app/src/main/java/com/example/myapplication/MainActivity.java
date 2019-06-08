@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         pontoB();
     }
 
+
     private void pontoA() {
 
         final EditText nomeA = findViewById(R.id.nomeA);
@@ -46,14 +47,19 @@ public class MainActivity extends AppCompatActivity {
         Button soma9 = findViewById(R.id.botao9Asoma);
         Button soma12 = findViewById(R.id.botao12Asoma);
         final TextView pontoA = findViewById(R.id.pontoA);
-        final TextView vitoria = findViewById(R.id.vitoria);
+
 
         aSoma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (totalPontoA >= 0 && totalPontoA <= 11) {
                     totalPontoA++;
-                    pontoA.setText("" + totalPontoA);
+                    if (totalPontoA <= 12) {
+                        pontoA.setText("" + totalPontoA);
+                    } else if (totalPontoA > 12) {
+                        totalPontoA = 12;
+                        pontoA.setText("" + totalPontoA);
+                    }
                 }
             }
         });
@@ -62,7 +68,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoA >= 1) {
                     totalPontoA--;
-                    pontoA.setText("" + totalPontoA);
+                    if (totalPontoA <= 12) {
+                        pontoA.setText("" + totalPontoA);
+                    } else if (totalPontoA > 12) {
+                        totalPontoA = 12;
+                        pontoA.setText("" + totalPontoA);
+                    }
                 }
             }
         });
@@ -71,7 +82,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoA >= 0 && totalPontoA <= 10) {
                     totalPontoA = totalPontoA + totalSoma3;
-                    pontoA.setText(""+ totalPontoA);
+                    if (totalPontoA <= 12) {
+                        pontoA.setText("" + totalPontoA);
+                    } else if (totalPontoA > 12) {
+                        totalPontoA = 12;
+                        pontoA.setText("" + totalPontoA);
+                    }
                 }
             }
         });
@@ -80,7 +96,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoA >= 0 && totalPontoA <= 10) {
                     totalPontoA = totalPontoA + totalSoma6;
-                    pontoA.setText(""+ totalPontoA);
+                    if (totalPontoA <= 12) {
+                        pontoA.setText("" + totalPontoA);
+                    } else if (totalPontoA > 12) {
+                        totalPontoA = 12;
+                        pontoA.setText("" + totalPontoA);
+                    }
                 }
             }
         });
@@ -89,7 +110,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoA >= 0 && totalPontoA <= 10) {
                     totalPontoA = totalPontoA + totalSoma9;
-                    pontoA.setText(""+ totalPontoA);
+                    if (totalPontoA <= 12) {
+                        pontoA.setText("" + totalPontoA);
+                    } else if (totalPontoA > 12) {
+                        totalPontoA = 12;
+                        pontoA.setText("" + totalPontoA);
+                    }
                 }
             }
         });
@@ -98,7 +124,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoA >= 0 && totalPontoA <= 10) {
                     totalPontoA = totalPontoA + totalSoma12;
-                    pontoA.setText(""+ totalPontoA);
+                    if (totalPontoA <= 12) {
+                        pontoA.setText("" + totalPontoA);
+                    } else if (totalPontoA > 12) {
+                        totalPontoA = 12;
+                        pontoA.setText("" + totalPontoA);
+                    }
                 }
             }
         });
@@ -119,7 +150,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoB >= 0 && totalPontoB <= 11) {
                     totalPontoB++;
-                    pontoB.setText("" + totalPontoB);
+                    if (totalPontoB <= 12) {
+                        pontoB.setText("" + totalPontoB);
+                    } else if (totalPontoB > 12) {
+                        totalPontoB = 12;
+                        pontoB.setText("" + totalPontoB);
+                    }
                 }
             }
         });
@@ -129,7 +165,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoB >= 1) {
                     totalPontoB--;
-                    pontoB.setText("" + totalPontoB);
+                    if (totalPontoB <= 12) {
+                        pontoB.setText("" + totalPontoB);
+                    } else if (totalPontoB > 12) {
+                        totalPontoB = 12;
+                        pontoB.setText("" + totalPontoB);
+                    }
                 }
             }
         });
@@ -138,7 +179,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoB >= 0 && totalPontoB <= 10) {
                     totalPontoB = totalPontoB + totalSoma3;
-                    pontoB.setText(""+ totalPontoB);
+                    if (totalPontoB <= 12) {
+                        pontoB.setText("" + totalPontoB);
+                    } else if (totalPontoB > 12) {
+                        totalPontoB = 12;
+                        pontoB.setText("" + totalPontoB);
+                    }
                 }
             }
         });
@@ -147,7 +193,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoB >= 0 && totalPontoB <= 10) {
                     totalPontoB = totalPontoB + totalSoma6;
-                    pontoB.setText(""+ totalPontoB);
+                    if (totalPontoB <= 12) {
+                        pontoB.setText("" + totalPontoB);
+                    } else if (totalPontoB > 12) {
+                        totalPontoB = 12;
+                        pontoB.setText("" + totalPontoB);
+                    }
                 }
             }
         });
@@ -156,7 +207,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoB >= 0 && totalPontoB <= 10) {
                     totalPontoB = totalPontoB + totalSoma9;
-                    pontoB.setText(""+ totalPontoB);
+                    if (totalPontoB <= 12) {
+                        pontoB.setText("" + totalPontoB);
+                    } else if (totalPontoB > 12) {
+                        totalPontoB = 12;
+                        pontoB.setText("" + totalPontoB);
+                    }
                 }
             }
         });
@@ -165,10 +221,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (totalPontoB >= 0 && totalPontoB <= 10) {
                     totalPontoB = totalPontoB + totalSoma12;
-                    pontoB.setText(""+ totalPontoB);
+                    if (totalPontoB <= 12) {
+                        pontoB.setText("" + totalPontoB);
+                    } else if (totalPontoB > 12) {
+                        totalPontoB = 12;
+                        pontoB.setText("" + totalPontoB);
+                    }
                 }
             }
         });
     }
+
 
 }

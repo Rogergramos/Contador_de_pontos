@@ -16,15 +16,14 @@
         android:textSize="60dp"
         android:textStyle="bold" />
 
-
     <RelativeLayout
         android:id="@+id/timeA"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/contaTento"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="40dp">
 
         <EditText
             android:id="@+id/nomeA"
@@ -41,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/nomeA"
             android:layout_centerInParent="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:text="+" />
 
         <TextView
@@ -50,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/botaoASoma"
             android:layout_centerInParent="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:textSize="40sp"
             android:text="X" />
 
@@ -60,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/pontoA"
             android:layout_centerInParent="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:text="-"/>
 
         <LinearLayout
@@ -69,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/botaoAsub"
             android:layout_centerInParent="true"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="20dp">
 
             <Button
                 android:id="@+id/botao3Asoma"
@@ -121,10 +120,10 @@
     <RelativeLayout
         android:id="@+id/timeB"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/contaTento"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:layout_marginRight="50dp">
 
         <EditText
@@ -142,7 +141,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/nomeB"
             android:layout_centerInParent="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:text="+" />
 
         <TextView
@@ -151,7 +150,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/botaoBSoma"
             android:layout_centerInParent="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:textSize="40sp"
             android:text="X" />
 
@@ -161,7 +160,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/pontoB"
             android:layout_centerInParent="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:text="-"
             />
 
@@ -170,7 +169,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/botaoBSub"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_centerInParent="true">
 
             <Button
@@ -219,15 +218,13 @@
 
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/vitoria"
+    <Button
+        android:id="@+id/reset"
+        android:layout_below="@id/timeA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="570dp"
- />
-
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Reiniciar contagem" />
 
 </RelativeLayout>
